@@ -8,6 +8,9 @@ module.exports = (config, context) => {
     ...config.plugins,
     new GenerateSW({
       swDest: 'sw.js',
+      exclude: [
+        /assets/
+      ]
     })
   ]
   }
