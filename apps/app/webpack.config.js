@@ -9,7 +9,7 @@ module.exports = (config, context) => {
     new GenerateSW({
       swDest: 'sw.js',
       exclude: [
-        /assets/
+        /.gitkeep/
       ]
     })
   ]
