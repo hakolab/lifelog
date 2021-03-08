@@ -11,7 +11,7 @@ ReactDOM.render(
 );
 
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/serviceworker.js', { scope: '/' })
+  navigator.serviceWorker.register('/sw.js', { scope: '/' })
     .then(function(reg) {
       console.log('登録に成功しました。 Scope は ' + reg.scope);
     }).catch(function(error) {
